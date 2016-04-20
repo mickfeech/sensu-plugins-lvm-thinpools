@@ -29,11 +29,13 @@ require 'sensu-plugin/check/cli'
 class CheckThinpool < Sensu::Plugin::Check::CLI
   option :warn,
          short: '-w WARN',
-         default: 75.00
+         default: 75.00,
+         proc: proc(&:to_f)
 
   option :crit,
          short: '-c CRIT',
-         default: 90.00
+         default: 90.00,
+         proc: proc(&:to_f)
 
   def initialize
     super
