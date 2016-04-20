@@ -19,7 +19,7 @@
 # -w WARNING - Percentage at which a warning is sent
 #
 # LICENSE:
-#   Chris McFee <cmcfee@kent.edut>
+#   Chris McFee <cmcfee@kent.edu>
 #   Release under the same terms as Sensu (the MIT license); see LICENSE
 #   for details.
 #
