@@ -10,7 +10,7 @@ else
 end
 
 Gem::Specification.new do |s|
-  s.name          = 'sensu-plugin'
+  s.name          = 'sensu-plugins-lvm-thinpools'
   s.version       = SensuPluginsLvmThinpools::Version::VER_STRING
   s.platform      = Gem::Platform::RUBY
   s.authors       = ['mickfeech and contributors']
