@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.authors       = ['mickfeech and contributors']
   s.date          = Date.today.to_s
   s.email         = ['cmcfee@kent.edu']
+  s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.homepage      = 'https://github.com/mickfeech/sensu-plugins-lvm-thinpools'
   s.summary       = 'This provides functionality to check lvm thinpools, like those that can be utilized for docker.'
   s.description   = 'Plugins to provide functionality to check lvm thinpools for Sensu, a monitoring framework'
