@@ -1,3 +1,29 @@
+#! /usr/bin/env ruby
+#
+#   check-lvm-thinpools.rb
+#
+# DESCRIPTION:
+# => Check if the lvm thinpools are within appropriate ranges
+#
+# OUTPUT:
+#   plain text
+#
+# PLATFORMS:
+#   Linux
+#
+# DEPENDENCIES:
+#   gem: sensu-plugin
+#
+# USAGE:
+# -c CRITICAL - Percentage at which a critical is sent
+# -w WARNING - Percentage at which a warning is sent
+#
+# LICENSE:
+#   Chris McFee <cmcfee@kent.edut>
+#   Release under the same terms as Sensu (the MIT license); see LICENSE
+#   for details.
+#
+
 require 'sensu-plugin/check/cli'
 
 class CheckThinpool < Sensu::Plugin::Check::CLI
