@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.version       = SensuPluginsLvmThinpools::Version::VER_STRING
   s.platform      = Gem::Platform::RUBY
   s.authors       = ['mickfeech and contributors']
+  s.date          = Date.today.to_s
   s.email         = ['cmcfee@kent.edu']
   s.homepage      = 'https://github.com/mickfeech/sensu-plugins-lvm-thinpools'
   s.summary       = 'This provides functionality to check lvm thinpools, like those that can be utilized for docker.'
@@ -29,6 +30,13 @@ Gem::Specification.new do |s|
   #s.add_dependency('json')
   #s.add_dependency('mixlib-cli', '>= 1.5.0')
 
-  s.add_development_dependency('rake')
-  s.add_development_dependency('minitest')
+  s.add_development_dependency 'bundler',                   '~> 1.7'
+  s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
+  s.add_development_dependency 'github-markup',             '~> 1.3'
+  s.add_development_dependency 'pry',                       '~> 0.10'
+  s.add_development_dependency 'rake',                      '~> 10.5'
+  s.add_development_dependency 'redcarpet',                 '~> 3.2'
+  s.add_development_dependency 'rubocop',                   '~> 0.37'
+  s.add_development_dependency 'rspec',                     '~> 3.4'
+  s.add_development_dependency 'yard',                      '~> 0.8'
 end
