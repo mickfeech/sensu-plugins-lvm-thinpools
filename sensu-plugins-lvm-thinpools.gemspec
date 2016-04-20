@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.authors       = ['mickfeech and contributors']
   s.date          = Date.today.to_s
   s.email         = ['cmcfee@kent.edu']
-  s.executables            = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
+  s.executables   = Dir.glob('bin/**/*.rb').map { |file| File.basename(file) }
   s.homepage      = 'https://github.com/mickfeech/sensu-plugins-lvm-thinpools'
   s.summary       = 'This provides functionality to check lvm thinpools, like those that can be utilized for docker.'
   s.description   = 'Plugins to provide functionality to check lvm thinpools for Sensu, a monitoring framework'
@@ -24,12 +24,12 @@ Gem::Specification.new do |s|
   s.has_rdoc      = false
   s.require_paths = ['lib']
   s.files         = Dir['lib/**/*.rb']
-  #s.test_files    = Dir['test/*.rb']
+  # s.test_files    = Dir['test/*.rb']
   s.test_files    = s.files.grep(%r{^(test|spec|features)/})
 
   s.add_runtime_dependency 'sensu-plugin', '~> 1.2'
-  #s.add_dependency('json')
-  #s.add_dependency('mixlib-cli', '>= 1.5.0')
+  # s.add_dependency('json')
+  # s.add_dependency('mixlib-cli', '>= 1.5.0')
 
   s.add_development_dependency 'bundler',                   '~> 1.7'
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
