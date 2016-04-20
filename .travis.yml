@@ -1,7 +1,15 @@
 language: ruby
 rvm:
-  - 2.1
-  - 2.2
-  - 2.3.0
+- 2.1
+- 2.2
+- 2.3.0
 before_install:
-  - gem update bundler
+- gem update bundler
+deploy:
+  provider: rubygems
+  api_key:
+    secure: fb17HDzc0FR3tmQFkeZ/tdGt0FMHmMQzU/fomdcjSD2mdk3Rj088b8eigd8D8GRovq/WxTkfs+4LmIAE+fIKSPshvdT5fMliRtqtXi0ROcvgMW48Ffdl76+NRHARdX1X3UJQLeLluvMe1Kq6n42+FrnOJFlNPuzVBIbz9flL4odV/jMjm7doDzG30hFZmDyhWbYkcSF7hNmbDfufS+kJKTqDUWbSoqTBGugwKgo0SBzgf6dot5S6AE2MGpPhj5Vq8mFRDhoQRrPlWiiFgsYKquTUtiSv3TDw9KjKPtF7zPkpCuzXBCWWer+HSt3XSBdxjyBVOYUGbHzsxhRKaZM6SSYgrJNkOBHJdzfzeBOcm5EByyxxy15yyHrd4CGwIGgNGrBgCFDNaatz+oSNb8N+T/wL682+tNiAK64zXhO/fbV2Y24XEXetXYhhwYRElL1RmKqFzW9W9AoiElMUJKAiUkirxOT9t1XRxVbP5KuY/AAngiqVLtClPxFtXIbANyiwUGbXboC1QvQMghViKHahPsXZL8FVPtqIuND6M+1UAfBIpj9TK262tK6rbmt9WVoNXW4eBAlOm06ReTjt6rFfoAgFfbcQriJXiwg6YCLYIFypnc9tRX4LN2kzw8ljeV9W3hMs+sxasblIjPFMEdwiHAsDGbLhzU4KdH2AUPBg0/Q=
+  gem: sensu-plugins-lvm-thinpools
+  on:
+    tags: true
+    repo: mickfeech/sensu-plugins-lvm-thinpools
