@@ -56,7 +56,6 @@ class CheckThinpool < Sensu::Plugin::Check::CLI
       lv_hash['metadata_percent'] = lv_array[3].to_f
       thinpools.push(lv_hash)
     end
-
     thinpools
   end
 
